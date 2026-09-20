@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Happy Birthday! </title>
+   
+</head>
+<body style="background-color: rgb(234, 224, 144);">
+  <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            box-sizing: border-box;
+            padding: 20px;
+            border: 30px solid #163e56;
+            display: block;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+
+        .top-banner {
+            position: absolute;
+            top: 20px;
+            width: min(300px, 32vw);
+            max-width: 100%;
+            height: auto;
+            z-index: 2;
+        }
+
+        .top-banner.left {
+            top: -90px;
+            left: -15px;
+        }
+
+        .top-banner.right {
+            top: -90px;
+            right: -15px;
+        }
+
+        .top-banner.left.extra {
+            top: -90px;
+            left: 280px;
+        }
+
+        .top-banner.right.extra {
+            top: -90px;
+            right: 280px;
+        }
+
+        .top-image {
+            position: absolute;
+            left: 50%;
+            top: -200px;
+            transform: translateX(-50%);
+            display: block;
+            width: min(650px, 76vw);
+            max-width: 100%;
+            height: auto;
+            z-index: 2;
+        }
+
+        .star-link {
+            position: absolute;
+            left: 50%;
+            top: 54%;
+            transform: translate(-50%, -50%);
+            display: inline-block;
+            transition: transform 0.35s ease, filter 0.35s ease;
+        }
+
+        .star-link:hover {
+            transform: translate(-50%, -50%) scale(1.18);
+            filter: drop-shadow(0 14px 18px rgba(0, 0, 0, 0.22));
+        }
+
+        img {
+            display: block;
+            width: 270px;
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.35s ease, filter 0.35s ease;
+        }
+
+.star-link:hover img {
+            transform: scale(1.05);
+        }
+
+        .bottom-left-image {
+            position: absolute;
+            left: 160px;
+            bottom: 30px;
+            width: min(240px, 26vw);
+            max-width: 100%;
+            height: auto;
+            z-index: 2;
+            border-radius: 12px;
+        }
+
+        .bottom-right-image {
+            position: absolute;
+            right: 120px;
+            bottom: 100px;
+            width: min(240px, 26vw);
+            max-width: 100%;
+            height: auto;
+            z-index: 2;
+            border-radius: 12px;
+        }
+
+        .message-placeholder {
+            position: absolute;
+            left: 50%;
+            bottom: 40px;
+            transform: translateX(-50%);
+            width: min(500px, 80vw);
+            min-height: 80px;
+            padding: 12px 16px;
+            border: 2px dashed #163e56;
+            border-radius: 10px;
+            color: #163e56;
+            font-size: 24px;
+            line-height: 1.5;
+            text-transform: uppercase;
+            background: rgba(255, 255, 255, 0.15);
+        }
+  </style>
+
+  <div class="card">
+      <img class="top-banner left" src="pics/banner.png" alt="banner left">
+      <img class="top-banner left extra" src="pics/banner.png" alt="banner left extra">
+      <img class="top-banner right" src="pics/banner.png" alt="banner right">
+      <img class="top-banner right extra" src="pics/banner.png" alt="banner right extra">
+      <img class="top-image" src="pics/bday.png" alt="Happy Birthday">
+      <img class="bottom-left-image" src="pics/kat.png" alt="kat photo">
+      <img class="bottom-right-image" src="pics/dihno.png" alt="dino photo">
+
+      <a class="star-link" href="file:///C:/Users/lili/OneDrive/Documents/Birthday/test%201.html">
+          <img src="pics/fstar.png" alt="star">
+      </a>
+
+      <div class="message-placeholder">
+          💙 CLICK THE STAR TO BEGIN 💙
+            <br>
+          WITH LOVE, FROM LILIBUD
+      </div>
+  </div>
+</body>
+</html>
